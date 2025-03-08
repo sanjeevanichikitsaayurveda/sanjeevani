@@ -11,26 +11,26 @@ import { SITE_CONSTANTS } from '@/utils/constants';
 const slideData = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1603302576837-37561b2e2302?q=80&w=1768&auto=format&fit=crop',
+    image: '/images/slide-1.webp',
     title: 'Natural Ayurvedic Solutions',
     description: 'Boost your vitality with our premium Ayurvedic formulations'
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1555726384-1e0ed8c5efbd?q=80&w=1770&auto=format&fit=crop',
+    image: '/images/slide-2.webp',
     title: 'Traditional Healing Wisdom',
     description: 'Ancient remedies for modern men wellness'
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1571732154668-cd989efe969f?q=80&w=1770&auto=format&fit=crop',
+    image: '/images/slide-3.webp',
     title: 'Revitalize Your Energy',
     description: 'Experience the power of authentic Ayurveda'
   }
 ];
 
 export default function HeroSlider() {
-  const { BUSINESS_NAME, CONTACT_PHONE } = SITE_CONSTANTS;
+  const { CONTACT_PHONE } = SITE_CONSTANTS;
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {

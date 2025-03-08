@@ -10,7 +10,7 @@ import { PRODUCTS_DATA, PRODUCT_CATEGORIES, SITE_CONSTANTS } from '@/utils/const
 export default function ProductsPage() {
   
   return (
-    <div className="pt-8 pb-16">
+    <div>
       {/* Hero Section */}
       <section className="relative text-white py-20" style={{ backgroundColor: '#4CAF50' }}>
         <div className="container mx-auto px-4 text-center">

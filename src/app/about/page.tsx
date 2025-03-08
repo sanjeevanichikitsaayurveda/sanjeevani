@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export default function AboutPage() {
   return (
-    <div className="pt-8 pb-16">
+    <div>
       {/* Hero Section */}
       <section className="relative bg-green-700 text-white py-20">
         <div className="container mx-auto px-4 text-center">

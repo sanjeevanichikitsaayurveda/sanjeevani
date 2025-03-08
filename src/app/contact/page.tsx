@@ -6,7 +6,7 @@ import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from 'react-icons/fa';
 
 export default function ContactPage() {
   return (
-    <div className="pt-8 pb-16">
+    <div>
       {/* Hero Section */}
       <section className="relative bg-green-700 text-white py-20">
         <div className="container mx-auto px-4 text-center">
@@ -67,8 +67,8 @@ export default function ContactPage() {
                     <div>
                       <h3 className="text-xl font-bold text-green-800 mb-2">Phone</h3>
                       <p className="text-gray-600 mb-1">Customer Support:</p>
-                      <a href="tel:9352684773" className="text-green-700 font-medium hover:underline">
-                        +91 9352684773
+                      <a href="tel:6389362607" className="text-green-700 font-medium hover:underline">
+                        +91 6389362607
                       </a>
                     </div>
                   </div>

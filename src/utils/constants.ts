@@ -3,9 +3,9 @@ export const SITE_CONSTANTS = {
   // Business Information
   BUSINESS_NAME: "Sanjeevani Chikitsa Ayurveda",
   BUSINESS_DESCRIPTION: "Providing authentic Ayurvedic products for men's sexual wellness. Our products are based on ancient Ayurvedic formulations to promote natural health and vitality.",
-  CONTACT_EMAIL: "mkbagaria13@gmail.com",
-  CONTACT_PHONE: "9352684773",
-  WHATSAPP_NUMBER: "919352684773",
+  CONTACT_EMAIL: "sanjeevanichikitsaayurveda@gmail.com",
+  CONTACT_PHONE: "6389362607",
+  WHATSAPP_NUMBER: "6389362607",
   
   // Address
   BUSINESS_ADDRESS: "123 Ayurveda Street, Jaipur, Rajasthan, India",
@@ -19,9 +19,9 @@ export const SITE_CONSTANTS = {
   
   // Social Media
   SOCIAL_MEDIA: {
-    FACEBOOK: "https://facebook.com/sanjeevaniayurveda",
+    FACEBOOK: "https://facebook.com/sanjeevanichikitsaayurveda",
     INSTAGRAM: "https://instagram.com/sanjeevanichikitsaayurveda",
-    YOUTUBE: "https://youtube.com/c/sanjeevaniayurveda",
+    YOUTUBE: "https://youtube.com/c/sanjeevanichikitsaayurveda",
   },
   
   // Email Configuration

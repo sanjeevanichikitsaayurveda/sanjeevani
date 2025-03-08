@@ -8,7 +8,7 @@ export default function FloatingButtons() {
     <>
       {/* Call Button - Right Bottom Corner */}
       <motion.a
-        href="tel:9352684773"
+        href="tel:6389362607"
         className="fixed bottom-6 right-6 bg-green-700 text-white rounded-full p-4 shadow-lg z-40 hover:bg-green-600 transition-all"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
@@ -21,7 +21,7 @@ export default function FloatingButtons() {
 
       {/* WhatsApp Button - Left Bottom Corner */}
       <motion.a
-        href="https://wa.me/919352684773"
+        href="https://wa.me/916389362607"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 left-6 bg-green-500 text-white rounded-full p-4 shadow-lg z-40 hover:bg-green-400 transition-all"

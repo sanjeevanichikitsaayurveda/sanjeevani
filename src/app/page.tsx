@@ -6,6 +6,7 @@ import Testimonials from '@/components/home/Testimonials';
 import ContactForm from '@/components/shared/ContactForm';
 import { motion } from 'framer-motion';
 import { SITE_CONSTANTS } from '@/utils/constants';
+import { FaStar } from 'react-icons/fa';
 
 export default function Home() {
   const { BUSINESS_NAME } = SITE_CONSTANTS;
@@ -62,7 +63,7 @@ export default function Home() {
                   <p className="font-medium">Mohd. Sahab A.</p>
                   <p className="text-sm text-gray-500">6 May 2024</p>
                 </div>
-                <img src="https://www.google.com/favicon.ico" alt="Google" className="w-5 h-5 ml-auto" />
+                <FaStar className="ml-auto text-yellow-500" size={20} />
               </div>
               <div className="flex mb-3">
                 {[1, 2, 3, 4, 5].map((star, index) => (
@@ -88,7 +89,7 @@ export default function Home() {
                   <p className="font-medium">Anil Ladhel</p>
                   <p className="text-sm text-gray-500">4 May 2024</p>
                 </div>
-                <img src="https://www.google.com/favicon.ico" alt="Google" className="w-5 h-5 ml-auto" />
+                <FaStar className="ml-auto text-yellow-500" size={20} />
               </div>
               <div className="flex mb-3">
                 {[1, 2, 3, 4, 5].map((star, index) => (
@@ -116,7 +117,7 @@ export default function Home() {
                   <p className="font-medium">pankaj jaguri</p>
                   <p className="text-sm text-gray-500">4 May 2024</p>
                 </div>
-                <img src="https://www.google.com/favicon.ico" alt="Google" className="w-5 h-5 ml-auto" />
+                <FaStar className="ml-auto text-yellow-500" size={20} />
               </div>
               <div className="flex mb-3">
                 {[1, 2, 3, 4].map((star, index) => (

@@ -1,8 +1,8 @@
 'use client';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaPhone, FaEnvelope, FaCheckCircle, FaUser, FaComment, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
-import { SITE_CONSTANTS } from '@/utils/constants';
+import { FaPhone, FaEnvelope, FaCheckCircle, FaUser, FaComment } from 'react-icons/fa';
+// import { SITE_CONSTANTS } from '@/utils/constants';
 
 interface ContactFormProps {
   title?: string;
@@ -13,7 +13,7 @@ interface ContactFormProps {
 export default function ContactForm({ 
   title = "Get In Touch With Us", 
   subtitle = "Have questions about our Ayurvedic products or services? Fill out the form below and our experts will get back to you soon.",
-  showOffers = true 
+  // showOffers = true 
 }: ContactFormProps) {
   const [formData, setFormData] = useState({
     name: '',
@@ -52,14 +52,14 @@ export default function ContactForm({
       } else {
         setSubmitStatus('error');
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  const { CONTACT_EMAIL, CONTACT_PHONE } = SITE_CONSTANTS;
+  // const { CONTACT_EMAIL, CONTACT_PHONE } = SITE_CONSTANTS;
 
   return (
     <div className="rounded-2xl shadow-2xl overflow-hidden">

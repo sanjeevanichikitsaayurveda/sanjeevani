@@ -5,13 +5,13 @@ import { motion } from 'framer-motion';
 import { FaStar, FaQuoteLeft } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { TESTIMONIALS_DATA, SITE_CONSTANTS } from '@/utils/constants';
+import { TESTIMONIALS_DATA } from '@/utils/constants';
 
 // Use testimonials data from constants
 const testimonials = TESTIMONIALS_DATA;
 
 export default function Testimonials() {
-  const { BUSINESS_NAME } = SITE_CONSTANTS;
+  // const { BUSINESS_NAME } = SITE_CONSTANTS;
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {

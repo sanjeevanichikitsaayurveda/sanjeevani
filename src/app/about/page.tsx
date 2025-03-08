@@ -1,6 +1,4 @@
 'use client';
-
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 export default function AboutPage() {
@@ -23,7 +21,7 @@ export default function AboutPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Revitalizing men's health through authentic Ayurvedic principles since 2010
+            Revitalizing men&apos;s health through authentic Ayurvedic principles since 2010
           </motion.p>
         </div>
       </section>
@@ -40,9 +38,9 @@ export default function AboutPage() {
             >
               <h2 className="text-3xl font-bold text-green-800 mb-6">Our Story</h2>
               <p className="text-gray-700 mb-4">
-                Sanjeevani Chikitsa Ayurveda was founded with a mission to address men's health concerns 
+                Sanjeevani Chikitsa Ayurveda was founded with a mission to address men&apos;s health concerns 
                 through the time-tested wisdom of Ayurveda. Our journey began when our founder, a respected 
-                Ayurvedic practitioner, identified a growing need for natural solutions to men's sexual health issues.
+                Ayurvedic practitioner, identified a growing need for natural solutions to men&apos;s sexual health issues.
               </p>
               <p className="text-gray-700 mb-4">
                 Drawing from ancient Ayurvedic texts and years of clinical experience, we developed our 

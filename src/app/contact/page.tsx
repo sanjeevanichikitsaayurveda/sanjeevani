@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import ContactForm from '@/components/shared/ContactForm';
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaClock } from 'react-icons/fa';
 
 export default function ContactPage() {
   return (
@@ -100,13 +100,13 @@ export default function ContactPage() {
               </div>
               
               <div className="mt-12 p-6 bg-green-50 rounded-lg">
-                <h3 className="text-xl font-bold text-green-800 mb-4">We're Here To Help</h3>
+                <h3 className="text-xl font-bold text-green-800 mb-4">We&apos;re Here To Help</h3>
                 <p className="text-gray-600 mb-4">
                   Our Ayurvedic consultants are available to answer any questions you might have about our 
                   products and how they can help with your specific health concerns.
                 </p>
                 <p className="text-gray-600">
-                  Don't hesitate to reach out to us through any of the contact methods listed above.
+                  Don&apos;t hesitate to reach out to us through any of the contact methods listed above.
                 </p>
               </div>
             </motion.div>

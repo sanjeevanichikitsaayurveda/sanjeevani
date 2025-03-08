@@ -1,11 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FaSearch } from 'react-icons/fa';
 import EnquiryModal from '@/components/shared/EnquiryModal';
-import { PRODUCTS_DATA, PRODUCT_CATEGORIES, SITE_CONSTANTS } from '@/utils/constants';
+import { PRODUCTS_DATA, PRODUCT_CATEGORIES } from '@/utils/constants';
 
 export default function ProductsPage() {
   
@@ -28,7 +27,7 @@ export default function ProductsPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Premium natural formulations for men's sexual health and vitality
+            Premium natural formulations for men&apos;s sexual health and vitality
           </motion.p>
         </div>
       </section>

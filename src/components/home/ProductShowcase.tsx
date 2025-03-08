@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import EnquiryModal from '../shared/EnquiryModal';
-import { PRODUCTS_DATA, SITE_CONSTANTS } from '@/utils/constants';
+import { PRODUCTS_DATA } from '@/utils/constants';
 
 // Use a subset of products for the homepage showcase
 const products = PRODUCTS_DATA.slice(0, 6).map(product => ({
@@ -44,7 +44,7 @@ export default function ProductShowcase() {
             Our Top Performing Products
           </h2>
           <p className="max-w-2xl mx-auto" style={{ color: '#1B5E20' }}>
-            Discover our premium range of Ayurvedic formulations specially crafted for men's sexual wellness and vitality.
+            Discover our premium range of Ayurvedic formulations specially crafted for men&apos;s sexual wellness and vitality.
           </p>
         </motion.div>
 

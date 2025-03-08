@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaPhone, FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaPhone, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 import { SITE_CONSTANTS } from '@/utils/constants';
 
 export default function Footer() {

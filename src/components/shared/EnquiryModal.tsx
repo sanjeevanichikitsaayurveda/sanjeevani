@@ -58,7 +58,7 @@ export default function EnquiryModal({ isOpen, onClose, productName }: EnquiryMo
       } else {
         setSubmitStatus('error');
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -150,7 +150,6 @@ export default function EnquiryModal({ isOpen, onClose, productName }: EnquiryMo
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full pl-10 px-4 py-3 border rounded-md transition-all focus:outline-none focus:ring-2 focus:ring-opacity-30"
                         style={{
                           borderColor: '#e5e5e5',
                           boxShadow: 'inset 0 2px 4px rgba(0, 0, 0, 0.03)',
@@ -184,7 +183,6 @@ export default function EnquiryModal({ isOpen, onClose, productName }: EnquiryMo
                         value={formData.mobile}
                         onChange={handleChange}
                         required
-                        className="w-full pl-10 px-4 py-3 border rounded-md transition-all focus:outline-none focus:ring-2 focus:ring-opacity-30"
                         style={{
                           borderColor: '#e5e5e5',
                           boxShadow: 'inset 0 2px 4px rgba(0, 0, 0, 0.03)',
@@ -216,7 +214,6 @@ export default function EnquiryModal({ isOpen, onClose, productName }: EnquiryMo
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
-                        className="w-full pl-10 px-4 py-3 border rounded-md transition-all focus:outline-none focus:ring-2 focus:ring-opacity-30 min-h-[100px]"
                         style={{
                           borderColor: '#e5e5e5',
                           boxShadow: 'inset 0 2px 4px rgba(0, 0, 0, 0.03)',
@@ -232,7 +229,7 @@ export default function EnquiryModal({ isOpen, onClose, productName }: EnquiryMo
                           e.target.style.boxShadow = 'inset 0 2px 4px rgba(0, 0, 0, 0.03)';
                         }}
                         placeholder="Any specific questions about this product?"
-                        className="w-full pl-10 px-4 py-3 border rounded-md transition-all focus:outline-none focus:ring-2 focus:ring-opacity-30 placeholder-gray-500"
+                        className="w-full pl-10 px-4 py-3 border rounded-md transition-all focus:outline-none focus:ring-2 focus:ring-opacity-30 placeholder-gray-500 min-h-[100px]"
                       />
                     </div>
                   </div>

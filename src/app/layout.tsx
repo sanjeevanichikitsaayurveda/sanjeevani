@@ -5,6 +5,8 @@ import "./globals.css";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import FloatingButtons from '@/components/shared/FloatingButtons';
+// Metadata is defined in metadata.ts file
+import Script from 'next/script';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,10 +18,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Sanjeevani Chikitsa Ayurveda | Ayurvedic Men's Sexual Wellness",
-  description: "Premium Ayurvedic products for men's sexual wellness and health. Natural remedies based on ancient Ayurvedic principles.",
-};
+// Metadata is defined in metadata.ts file
 
 export default function RootLayout({
   children,
@@ -28,11 +27,58 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="canonical" href="https://sanjeevaniayurveda.com" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#4CAF50" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+            height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe>
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
+        
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
         <FloatingButtons />
+        
+        {/* Google Tag Manager */}
+        <Script id="google-tag-manager" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-XXXXXXX');
+          `}
+        </Script>
+        
+        {/* Schema.org structured data */}
+        <Script id="schema-org" type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Sanjeevani Chikitsa Ayurveda",
+              "url": "https://sanjeevaniayurveda.com",
+              "logo": "https://sanjeevaniayurveda.com/logo.png",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91-6389362607",
+                "contactType": "customer service",
+                "availableLanguage": ["English", "Hindi"]
+              },
+              "sameAs": [
+                "https://facebook.com/sanjeevanichikitsaayurveda",
+                "https://instagram.com/sanjeevanichikitsaayurveda",
+                "https://youtube.com/c/sanjeevanichikitsaayurveda"
+              ]
+            }
+          `}
+        </Script>
       </body>
     </html>
   );

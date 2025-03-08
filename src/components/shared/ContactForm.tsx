@@ -59,14 +59,14 @@ export default function ContactForm({
     }
   };
 
-  const { COLORS, CONTACT_EMAIL, CONTACT_PHONE } = SITE_CONSTANTS;
+  const { CONTACT_EMAIL, CONTACT_PHONE } = SITE_CONSTANTS;
 
   return (
     <div className="rounded-2xl shadow-2xl overflow-hidden">
       <div className="p-8 md:p-10" 
         style={{ 
           backgroundColor: '#FFFFFF',
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23${COLORS.PRIMARY.slice(1)}' fill-opacity='0.05' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='1.5'/%3E%3Ccircle cx='13' cy='13' r='1.5'/%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%238B4513' fill-opacity='0.05' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='1.5'/%3E%3Ccircle cx='13' cy='13' r='1.5'/%3E%3C/g%3E%3C/svg%3E")`,
           backgroundSize: '20px 20px'
         }}>
         <motion.h3 
@@ -95,17 +95,17 @@ export default function ContactForm({
             <motion.div 
               className="border rounded-md p-6 text-center"
               style={{ 
-                backgroundColor: `${COLORS.LIGHT}50`, 
-                borderColor: COLORS.PRIMARY,
-                boxShadow: `inset 0 0 20px ${COLORS.LIGHT}80`
+                backgroundColor: '#F5DEB350', 
+                borderColor: '#8B4513',
+                boxShadow: 'inset 0 0 20px #F5DEB380'
               }}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3 }}
             >
-              <FaCheckCircle className="text-4xl mx-auto mb-4" style={{ color: COLORS.PRIMARY }} />
-              <h4 className="text-xl font-bold mb-2" style={{ color: COLORS.DARK }}>Message Sent Successfully!</h4>
-              <p style={{ color: COLORS.TEXT_DARK }}>
+              <FaCheckCircle className="text-4xl mx-auto mb-4" style={{ color: '#8B4513' }} />
+              <h4 className="text-xl font-bold mb-2" style={{ color: '#5C4033' }}>Message Sent Successfully!</h4>
+              <p style={{ color: '#3A2718' }}>
                 Thank you for contacting Sanjeevani Chikitsa Ayurveda. Our team will get back to you shortly.
               </p>
             </motion.div>
@@ -118,7 +118,7 @@ export default function ContactForm({
                   </label>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                      <FaUser style={{ color: COLORS.SECONDARY }} />
+                      <FaUser style={{ color: '#CD853F' }} />
                     </div>
                     <input
                       type="text"
@@ -135,8 +135,8 @@ export default function ContactForm({
                         color: '#666666'
                       }}
                       onFocus={(e) => {
-                        e.target.style.borderColor = COLORS.PRIMARY;
-                        e.target.style.boxShadow = `0 0 0 3px ${COLORS.PRIMARY}30`;
+                        e.target.style.borderColor = '#8B4513';
+                        e.target.style.boxShadow = '0 0 0 3px #8B451330';
                       }}
                       onBlur={(e) => {
                         e.target.style.borderColor = '#e5e5e5';
@@ -152,7 +152,7 @@ export default function ContactForm({
                   </label>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                      <FaPhone style={{ color: COLORS.SECONDARY }} />
+                      <FaPhone style={{ color: '#CD853F' }} />
                     </div>
                     <input
                       type="tel"
@@ -169,8 +169,8 @@ export default function ContactForm({
                         color: '#666666'
                       }}
                       onFocus={(e) => {
-                        e.target.style.borderColor = COLORS.PRIMARY;
-                        e.target.style.boxShadow = `0 0 0 3px ${COLORS.PRIMARY}30`;
+                        e.target.style.borderColor = '#8B4513';
+                        e.target.style.boxShadow = '0 0 0 3px #8B451330';
                       }}
                       onBlur={(e) => {
                         e.target.style.borderColor = '#e5e5e5';
@@ -188,7 +188,7 @@ export default function ContactForm({
                 </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                    <FaEnvelope style={{ color: COLORS.SECONDARY }} />
+                    <FaEnvelope style={{ color: '#CD853F' }} />
                   </div>
                   <input
                     type="email"
@@ -204,8 +204,8 @@ export default function ContactForm({
                       color: '#666666'
                     }}
                     onFocus={(e) => {
-                      e.target.style.borderColor = COLORS.PRIMARY;
-                      e.target.style.boxShadow = `0 0 0 3px ${COLORS.PRIMARY}30`;
+                      e.target.style.borderColor = '#8B4513';
+                      e.target.style.boxShadow = '0 0 0 3px #8B451330';
                     }}
                     onBlur={(e) => {
                       e.target.style.borderColor = '#e5e5e5';
@@ -222,7 +222,7 @@ export default function ContactForm({
                 </label>
                 <div className="relative">
                   <div className="absolute top-3 left-3 pointer-events-none">
-                    <FaComment style={{ color: COLORS.SECONDARY }} />
+                    <FaComment style={{ color: '#CD853F' }} />
                   </div>
                   <textarea
                     id="message"
@@ -238,8 +238,8 @@ export default function ContactForm({
                       color: '#666666'
                     }}
                     onFocus={(e) => {
-                      e.target.style.borderColor = COLORS.PRIMARY;
-                      e.target.style.boxShadow = `0 0 0 3px ${COLORS.PRIMARY}30`;
+                      e.target.style.borderColor = '#8B4513';
+                      e.target.style.boxShadow = '0 0 0 3px #8B451330';
                     }}
                     onBlur={(e) => {
                       e.target.style.borderColor = '#e5e5e5';

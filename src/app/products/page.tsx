@@ -8,12 +8,11 @@ import EnquiryModal from '@/components/shared/EnquiryModal';
 import { PRODUCTS_DATA, PRODUCT_CATEGORIES, SITE_CONSTANTS } from '@/utils/constants';
 
 export default function ProductsPage() {
-  const { COLORS } = SITE_CONSTANTS;
   
   return (
     <div className="pt-8 pb-16">
       {/* Hero Section */}
-      <section className="relative text-white py-20" style={{ backgroundColor: COLORS.PRIMARY }}>
+      <section className="relative text-white py-20" style={{ backgroundColor: '#8B4513' }}>
         <div className="container mx-auto px-4 text-center">
           <motion.h1 
             className="text-4xl md:text-5xl font-bold mb-6"
@@ -37,7 +36,7 @@ export default function ProductsPage() {
       {/* Products Showcase */}
       <div className="py-16" style={{
         backgroundColor: '#FFFFFF',
-        backgroundImage: `url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23${COLORS.PRIMARY.slice(1)}' fill-opacity='0.05' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='1.5'/%3E%3Ccircle cx='13' cy='13' r='1.5'/%3E%3C/g%3E%3C/svg%3E")`,
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%238B4513' fill-opacity='0.05' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='1.5'/%3E%3Ccircle cx='13' cy='13' r='1.5'/%3E%3C/g%3E%3C/svg%3E")`,
         backgroundSize: '20px 20px'
       }}>
         <div className="container mx-auto px-4">
@@ -97,7 +96,7 @@ function ProductsShowcase({ products }: { products: Product[] }) {
                 key={category.id}
                 className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
                   activeCategory === category.id 
-                    ? `bg-[${COLORS.PRIMARY}] text-white` 
+                    ? `bg-[#8B4513] text-white` 
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
                 onClick={() => setActiveCategory(category.id)}
@@ -114,7 +113,7 @@ function ProductsShowcase({ products }: { products: Product[] }) {
               placeholder="Search products..."
               className="w-full md:w-64 pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2"
               style={{ 
-                "--tw-ring-color": COLORS.PRIMARY 
+                "--tw-ring-color": '#8B4513' 
               } as React.CSSProperties}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}

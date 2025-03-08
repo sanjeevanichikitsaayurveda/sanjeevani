@@ -3,9 +3,9 @@ import { FaPhone, FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
 import { SITE_CONSTANTS } from '@/utils/constants';
 
 export default function Footer() {
-  const { BUSINESS_NAME, CONTACT_PHONE, EMAIL, COLORS, BUSINESS_DESCRIPTION } = SITE_CONSTANTS;
+  const { BUSINESS_NAME, CONTACT_PHONE, EMAIL, BUSINESS_DESCRIPTION } = SITE_CONSTANTS;
   return (
-    <footer style={{ backgroundColor: COLORS.PRIMARY, color: COLORS.TEXT_LIGHT }} className="pt-12 pb-6">
+    <footer style={{ backgroundColor: '#8B4513', color: '#FFFFFF' }} className="pt-12 pb-6">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About Section */}
@@ -69,7 +69,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t mt-8 pt-6 text-center" style={{ borderColor: `${COLORS.LIGHT}30` }}>
+        <div className="border-t mt-8 pt-6 text-center" style={{ borderColor: '#F5DEB330' }}>
           <p>&copy; {new Date().getFullYear()} {BUSINESS_NAME}. All rights reserved.</p>
         </div>
       </div>

@@ -11,7 +11,7 @@ import { TESTIMONIALS_DATA, SITE_CONSTANTS } from '@/utils/constants';
 const testimonials = TESTIMONIALS_DATA;
 
 export default function Testimonials() {
-  const { COLORS, BUSINESS_NAME } = SITE_CONSTANTS;
+  const { BUSINESS_NAME } = SITE_CONSTANTS;
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -50,10 +50,10 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: COLORS.PRIMARY }}>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#8B4513' }}>
             Trusted by Men Across India
           </h2>
-          <p className="max-w-2xl mx-auto" style={{ color: COLORS.TEXT_DARK }}>
+          <p className="max-w-2xl mx-auto" style={{ color: '#3A2718' }}>
             Hear what our satisfied customers have to say about their experience with our Ayurvedic products.
           </p>
         </motion.div>
@@ -77,15 +77,15 @@ export default function Testimonials() {
                   </div>
                   
                   <div className="mb-6 text-center">
-                    <FaQuoteLeft className="text-4xl mx-auto mb-4" style={{ color: COLORS.LIGHT }} />
+                    <FaQuoteLeft className="text-4xl mx-auto mb-4" style={{ color: '#F5DEB3' }} />
                     <p className="text-gray-700 text-lg italic leading-relaxed">
                       {testimonial.text}
                     </p>
                   </div>
                   
                   <div className="text-center">
-                    <h4 className="text-xl font-bold" style={{ color: COLORS.PRIMARY }}>{testimonial.name}</h4>
-                    <p style={{ color: COLORS.TEXT_DARK }}>{testimonial.location}</p>
+                    <h4 className="text-xl font-bold" style={{ color: '#8B4513' }}>{testimonial.name}</h4>
+                    <p style={{ color: '#3A2718' }}>{testimonial.location}</p>
                   </div>
                 </div>
               </div>

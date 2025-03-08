@@ -29,17 +29,7 @@ export const SITE_CONSTANTS = {
     ENQUIRY_EMAIL: "sanjeevanichikitsaayurveda@gmail.com",
   },
   
-  // Theme Colors
-  COLORS: {
-    PRIMARY: "#8B4513",      // Saddle Brown - earthy tone
-    SECONDARY: "#CD853F",    // Peru - warm golden brown
-    ACCENT: "#D2691E",       // Chocolate - warm reddish brown
-    LIGHT: "#F5DEB3",        // Wheat - light sandy tone
-    DARK: "#5C4033",         // Dark Brown - rich earth tone
-    TEXT_LIGHT: "#F5F5DC",   // Beige - soft light text color
-    TEXT_DARK: "#3A2718",    // Dark Brown - dark text color
-    HIGHLIGHT: "#B8860B",    // DarkGoldenrod - golden highlight
-  },
+
 };
 
 // Product categories for the filter

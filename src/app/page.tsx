@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 import { SITE_CONSTANTS } from '@/utils/constants';
 
 export default function Home() {
-  const { COLORS, BUSINESS_NAME } = SITE_CONSTANTS;
+  const { BUSINESS_NAME } = SITE_CONSTANTS;
   return (
     <div>
       {/* Hero Section with Slider */}
@@ -30,10 +30,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: COLORS.PRIMARY }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#8B4513' }}>
               Contact Us Today
             </h2>
-            <p className="max-w-2xl mx-auto" style={{ color: COLORS.TEXT_DARK }}>
+            <p className="max-w-2xl mx-auto" style={{ color: '#3A2718' }}>
               Our Ayurvedic experts are ready to address your concerns and guide you toward better health and vitality.
             </p>
           </motion.div>

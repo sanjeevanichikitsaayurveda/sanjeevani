@@ -30,7 +30,7 @@ const slideData = [
 ];
 
 export default function HeroSlider() {
-  const { COLORS, BUSINESS_NAME, CONTACT_PHONE } = SITE_CONSTANTS;
+  const { BUSINESS_NAME, CONTACT_PHONE } = SITE_CONSTANTS;
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -95,12 +95,12 @@ export default function HeroSlider() {
                 href={`tel:+91${CONTACT_PHONE}`}
                 className="flex items-center justify-center text-white font-bold py-3 px-8 rounded-full transition-all duration-300"
                 style={{ 
-                  backgroundColor: COLORS.PRIMARY,
+                  backgroundColor: '#8B4513',
                   boxShadow: '0 4px 6px rgba(0,0,0,0.3)'
                 }}
                 whileHover={{ 
                   scale: 1.05,
-                  backgroundColor: COLORS.SECONDARY,
+                  backgroundColor: '#CD853F',
                 }}
                 whileTap={{ scale: 0.95 }}
                 initial={{ opacity: 0, y: 20 }}

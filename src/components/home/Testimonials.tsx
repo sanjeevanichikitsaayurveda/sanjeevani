@@ -50,10 +50,10 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#8B4513' }}>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#4CAF50' }}>
             Trusted by Men Across India
           </h2>
-          <p className="max-w-2xl mx-auto" style={{ color: '#3A2718' }}>
+          <p className="max-w-2xl mx-auto" style={{ color: '#1B5E20' }}>
             Hear what our satisfied customers have to say about their experience with our Ayurvedic products.
           </p>
         </motion.div>
@@ -77,15 +77,15 @@ export default function Testimonials() {
                   </div>
                   
                   <div className="mb-6 text-center">
-                    <FaQuoteLeft className="text-4xl mx-auto mb-4" style={{ color: '#F5DEB3' }} />
+                    <FaQuoteLeft className="text-4xl mx-auto mb-4" style={{ color: '#E8F5E9' }} />
                     <p className="text-gray-700 text-lg italic leading-relaxed">
                       {testimonial.text}
                     </p>
                   </div>
                   
                   <div className="text-center">
-                    <h4 className="text-xl font-bold" style={{ color: '#8B4513' }}>{testimonial.name}</h4>
-                    <p style={{ color: '#3A2718' }}>{testimonial.location}</p>
+                    <h4 className="text-xl font-bold" style={{ color: '#4CAF50' }}>{testimonial.name}</h4>
+                    <p style={{ color: '#1B5E20' }}>{testimonial.location}</p>
                   </div>
                 </div>
               </div>

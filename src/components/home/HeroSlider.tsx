@@ -95,12 +95,12 @@ export default function HeroSlider() {
                 href={`tel:+91${CONTACT_PHONE}`}
                 className="flex items-center justify-center text-white font-bold py-3 px-8 rounded-full transition-all duration-300"
                 style={{ 
-                  backgroundColor: '#8B4513',
+                  backgroundColor: '#4CAF50',
                   boxShadow: '0 4px 6px rgba(0,0,0,0.3)'
                 }}
                 whileHover={{ 
                   scale: 1.05,
-                  backgroundColor: '#CD853F',
+                  backgroundColor: '#8BC34A',
                 }}
                 whileTap={{ scale: 0.95 }}
                 initial={{ opacity: 0, y: 20 }}

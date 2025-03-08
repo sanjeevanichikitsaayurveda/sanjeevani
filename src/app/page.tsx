@@ -30,10 +30,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#8B4513' }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#4CAF50' }}>
               Contact Us Today
             </h2>
-            <p className="max-w-2xl mx-auto" style={{ color: '#3A2718' }}>
+            <p className="max-w-2xl mx-auto" style={{ color: '#1B5E20' }}>
               Our Ayurvedic experts are ready to address your concerns and guide you toward better health and vitality.
             </p>
           </motion.div>

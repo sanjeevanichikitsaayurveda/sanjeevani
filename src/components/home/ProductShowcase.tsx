@@ -40,10 +40,10 @@ export default function ProductShowcase() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#8B4513' }}>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#4CAF50' }}>
             Our Top Performing Products
           </h2>
-          <p className="max-w-2xl mx-auto" style={{ color: '#3A2718' }}>
+          <p className="max-w-2xl mx-auto" style={{ color: '#1B5E20' }}>
             Discover our premium range of Ayurvedic formulations specially crafted for men's sexual wellness and vitality.
           </p>
         </motion.div>
@@ -74,22 +74,22 @@ export default function ProductShowcase() {
                 )}
               </div>
               <div className="p-6 flex-grow">
-                <h3 className="text-xl font-bold mb-2" style={{ color: '#8B4513' }}>{product.name}</h3>
-                <p className="mb-4" style={{ color: '#3A2718' }}>{product.description}</p>
-                <p className="text-2xl font-bold mb-4" style={{ color: '#CD853F' }}>{product.price}</p>
+                <h3 className="text-xl font-bold mb-2" style={{ color: '#4CAF50' }}>{product.name}</h3>
+                <p className="mb-4" style={{ color: '#1B5E20' }}>{product.description}</p>
+                <p className="text-2xl font-bold mb-4" style={{ color: '#8BC34A' }}>{product.price}</p>
                 <button
                   onClick={() => openEnquiryModal(product.name)}
                   className="w-full text-white font-medium py-2 px-4 rounded-md transition-colors"
                   style={{ 
-                    backgroundColor: '#8B4513',
+                    backgroundColor: '#4CAF50',
                     boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
                   }}
                   onMouseOver={(e) => {
-                    e.currentTarget.style.backgroundColor = '#CD853F';
+                    e.currentTarget.style.backgroundColor = '#8BC34A';
                     e.currentTarget.style.boxShadow = '0 4px 6px rgba(0,0,0,0.15)';
                   }}
                   onMouseOut={(e) => {
-                    e.currentTarget.style.backgroundColor = '#8B4513';
+                    e.currentTarget.style.backgroundColor = '#4CAF50';
                     e.currentTarget.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
                   }}
                 >
@@ -105,15 +105,15 @@ export default function ProductShowcase() {
             href="/products" 
             className="inline-flex items-center justify-center text-white font-bold py-3 px-8 rounded-md transition-colors"
             style={{ 
-              backgroundColor: '#8B4513',
+              backgroundColor: '#4CAF50',
               boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
             }}
             onMouseOver={(e) => {
-              e.currentTarget.style.backgroundColor = '#CD853F';
+              e.currentTarget.style.backgroundColor = '#8BC34A';
               e.currentTarget.style.boxShadow = '0 4px 6px rgba(0,0,0,0.15)';
             }}
             onMouseOut={(e) => {
-              e.currentTarget.style.backgroundColor = '#8B4513';
+              e.currentTarget.style.backgroundColor = '#4CAF50';
               e.currentTarget.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
             }}
           >

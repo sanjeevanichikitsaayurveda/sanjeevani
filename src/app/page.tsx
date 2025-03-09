@@ -4,6 +4,9 @@ import HeroSection from '@/components/home/HeroSlider';
 import AboutUsSection from '@/components/home/AboutUsSection';
 import ServicesHighlights from '@/components/home/ServicesHighlights';
 import TrustIndicators from '@/components/home/TrustIndicators';
+import ProductBenefits from '@/components/home/ProductBenefits';
+import BusinessStats from '@/components/home/BusinessStats';
+import TreatmentCTA from '@/components/home/TreatmentCTA';
 import Testimonials from '@/components/home/Testimonials';
 import ContactForm from '@/components/shared/ContactForm';
 import { motion } from 'framer-motion';
@@ -25,6 +28,15 @@ export default function Home() {
       
       {/* Trust Indicators Section */}
       <TrustIndicators />
+      
+      {/* Product Benefits Section */}
+      <ProductBenefits />
+      
+      {/* Business Stats Section */}
+      <BusinessStats />
+      
+      {/* Treatment CTA Section */}
+      <TreatmentCTA />
       
       {/* Product Showcase Section */}
       

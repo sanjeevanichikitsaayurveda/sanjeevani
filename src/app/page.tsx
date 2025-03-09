@@ -1,7 +1,8 @@
 'use client';
 
-import HeroSlider from '@/components/home/HeroSlider';
-import ProductShowcase from '@/components/home/ProductShowcase';
+import HeroSection from '@/components/home/HeroSlider';
+import AboutUsSection from '@/components/home/AboutUsSection';
+import ServicesHighlights from '@/components/home/ServicesHighlights';
 import Testimonials from '@/components/home/Testimonials';
 import ContactForm from '@/components/shared/ContactForm';
 import { motion } from 'framer-motion';
@@ -12,11 +13,17 @@ export default function Home() {
   const { BUSINESS_NAME } = SITE_CONSTANTS;
   return (
     <div>
-      {/* Hero Section with Slider */}
-      <HeroSlider />
+      {/* Hero Section */}
+      <HeroSection />
+      
+      {/* Services Highlights Section */}
+      <ServicesHighlights />
+      
+      {/* About Us Section */}
+      <AboutUsSection />
+      
       
       {/* Product Showcase Section */}
-      <ProductShowcase />
       
       {/* Testimonials Section */}
       <Testimonials />

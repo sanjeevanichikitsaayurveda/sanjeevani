@@ -1,119 +1,105 @@
 'use client';
-import { useEffect, useState } from 'react';
-import Slider from 'react-slick';
 import { motion } from 'framer-motion';
-import { FaPhone } from 'react-icons/fa';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import { FaPhone, FaClock, FaFlask } from 'react-icons/fa';
+import { MdEmergency } from 'react-icons/md';
 import { SITE_CONSTANTS } from '@/utils/constants';
 
-// Hero slider data
-const slideData = [
-  {
-    id: 1,
-    image: '/images/slide-1.webp',
-    title: 'Natural Ayurvedic Solutions',
-    description: 'Boost your vitality with our premium Ayurvedic formulations'
-  },
-  {
-    id: 2,
-    image: '/images/slide-2.webp',
-    title: 'Traditional Healing Wisdom',
-    description: 'Ancient remedies for modern men wellness'
-  },
-  {
-    id: 3,
-    image: '/images/slide-3.webp',
-    title: 'Revitalize Your Energy',
-    description: 'Experience the power of authentic Ayurveda'
-  }
-];
-
-export default function HeroSlider() {
-  const { CONTACT_PHONE } = SITE_CONSTANTS;
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    pauseOnHover: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false
-        }
-      }
-    ]
-  };
-
-  if (!isClient) return null;
+export default function HeroSection() {
+  const { CONTACT_PHONE} = SITE_CONSTANTS;
 
   return (
-    <div className="relative w-full h-screen max-h-[700px] overflow-hidden">
-      <Slider {...settings} className="h-full">
-        {slideData.map((slide) => (
-          <div key={slide.id} className="relative h-screen max-h-[700px]">
-            <div 
-              className="absolute inset-0 bg-cover bg-center z-0" 
-              style={{ backgroundImage: `url(${slide.image})` }}
-            >
-              <div className="absolute inset-0 bg-black opacity-50"></div>
+    <div className="relative w-full overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <div 
+          className="w-full h-full bg-cover bg-center" 
+          style={{ backgroundImage: "url('/images/sanjeevni-3.webp')" }}
+        >
+          <div className="absolute inset-0 bg-green-800 opacity-50"></div>
+        </div>
+      </div>
+      
+      <div className="container mx-auto px-4 py-16 md:py-20 relative z-10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+          {/* Left Content */}
+          <div className="w-full md:w-7/12 text-white">
+            <div className="inline-block bg-green-100 text-green-800 px-4 py-1 rounded-md text-sm font-medium mb-4">
+              BEST TREATMENT
             </div>
             
-            <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white px-4">
-              <motion.h1 
-                className="text-4xl md:text-6xl font-bold mb-4"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}
+            <motion.h1 
+              className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              FROM<br />SANJEEVANI<br />CHIKITSA<br />AYURVEDA
+            </motion.h1>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <a 
+                href="/contact"
+                className="inline-block bg-green-100 text-green-800 font-medium py-3 px-8 rounded-md hover:bg-white hover:text-green-700 transition-colors"
               >
-                {slide.title}
-              </motion.h1>
-              
-              <motion.p 
-                className="text-xl md:text-2xl mb-8 max-w-2xl"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.5)' }}
-              >
-                {slide.description}
-              </motion.p>
-              
-              <motion.a 
-                href={`tel:+91${CONTACT_PHONE}`}
-                className="flex items-center justify-center text-white font-bold py-3 px-8 rounded-full transition-all duration-300"
-                style={{ 
-                  backgroundColor: '#4CAF50',
-                  boxShadow: '0 4px 6px rgba(0,0,0,0.3)'
-                }}
-                whileHover={{ 
-                  scale: 1.05,
-                  backgroundColor: '#8BC34A',
-                }}
-                whileTap={{ scale: 0.95 }}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-              >
-                <FaPhone className="mr-2" />
-                Call Now: {CONTACT_PHONE}
-              </motion.a>
-            </div>
+                CONTACT US
+              </a>
+            </motion.div>
           </div>
-        ))}
-      </Slider>
+          
+          {/* Right Content - Info Card */}
+          <motion.div 
+            className="w-full md:w-5/12 bg-white rounded-lg shadow-xl p-6"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            {/* Appointments */}
+            <div className="mb-6">
+              <div className="flex items-center mb-2">
+                <div className="text-green-600 mr-3">
+                  <FaClock size={24} />
+                </div>
+                <h3 className="text-lg font-bold text-gray-800">APPOINTMENTS</h3>
+              </div>
+              <div className="pl-10 text-gray-600">
+                <p>MON-FRI 9:00-18:00</p>
+                <p>SAT-SUN 10:00-14:00</p>
+              </div>
+            </div>
+            
+            {/* Test Results */}
+            <div className="mb-6">
+              <div className="flex items-center mb-2">
+                <div className="text-green-600 mr-3">
+                  <FaFlask size={24} />
+                </div>
+                <h3 className="text-lg font-bold text-gray-800">TEST RESULT</h3>
+              </div>
+              <div className="pl-10 text-gray-600">
+                <p>You can check your test</p>
+                <p>results online.</p>
+              </div>
+            </div>
+            
+            {/* Emergency Case */}
+            <div>
+              <div className="flex items-center mb-2">
+                <div className="text-green-600 mr-3">
+                  <MdEmergency size={24} />
+                </div>
+                <h3 className="text-lg font-bold text-gray-800">EMERGENCY CASE</h3>
+              </div>
+              <div className="pl-10">
+                <p className="text-green-600 font-bold text-xl">+91 {CONTACT_PHONE}</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
     </div>
   );
 }

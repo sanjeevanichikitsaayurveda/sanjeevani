@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import { motion } from 'framer-motion';
 import { FaStar, FaQuoteLeft } from 'react-icons/fa';
+import Image from 'next/image';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { TESTIMONIALS_DATA } from '@/utils/constants';
@@ -25,7 +26,7 @@ export default function Testimonials() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 3000,
     pauseOnHover: true,
     adaptiveHeight: true,
     responsive: [
@@ -64,9 +65,19 @@ export default function Testimonials() {
               <div key={testimonial.id} className="px-4">
                 <div className="bg-white rounded-lg shadow-md p-8 md:p-10">
                   <div className="flex justify-center mb-6">
-                    <div className="w-20 h-20 rounded-full overflow-hidden bg-gray-300 flex items-center justify-center">
-                      {/* Placeholder for customer image */}
-                      <span className="text-gray-500">Photo</span>
+                    <div className="w-20 h-20 rounded-full overflow-hidden bg-gray-200 border-2 border-green-100 shadow-md">
+                      <Image 
+                        src={testimonial.image || '/images/placeholder-user.jpg'}
+                        alt={`${testimonial.name} photo`}
+                        width={80}
+                        height={80}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          // Fallback if image doesn't exist
+                          const target = e.target as HTMLImageElement;
+                          target.src = "https://via.placeholder.com/80?text=User";
+                        }}
+                      />
                     </div>
                   </div>
                   

@@ -40,42 +40,39 @@ export const PRODUCT_CATEGORIES = [
   { id: 'reproductive', name: 'Reproductive Health' }
 ];
 
-// Dummy testimonials data
+// Testimonials data with customer images
 export const TESTIMONIALS_DATA = [
   {
     id: 1,
     name: "Rajesh Kumar",
     location: "Delhi",
     text: "मैंने पिछले 6 महीने से आपके उत्पाद का उपयोग कर रहा हूं और मुझे अद्भुत परिणाम मिले हैं। मेरी ऊर्जा और स्टैमिना में काफी सुधार हुआ है।",
-    rating: 5
+    rating: 5,
+    image: "/images/review-1.webp"
   },
   {
     id: 2,
     name: "Mahesh Singh",
     location: "Jaipur",
     text: "The Ashwagandha Power formula has completely transformed my energy levels. After just one month, I noticed a significant difference in my overall wellbeing and vitality.",
-    rating: 5
+    rating: 5,
+    image: "/images/review-2.webp"
   },
   {
     id: 3,
     name: "Suresh Patel",
     location: "Mumbai",
     text: "मैं 45 साल का हूं और मेरे जीवन में एक नया उत्साह आया है संजीवनी के उत्पादों के कारण। मेरी पत्नी भी इन परिवर्तनों से बहुत खुश है।",
-    rating: 4
+    rating: 4,
+    image: "/images/review-3.webp"
   },
   {
     id: 4,
     name: "Vijay Sharma",
     location: "Bangalore",
     text: "I've tried many supplements before, but nothing compares to the quality and effectiveness of Sanjeevani's products. I appreciate the natural approach to male wellness.",
-    rating: 5
-  },
-  {
-    id: 5,
-    name: "Praveen Gupta",
-    location: "Chandigarh",
-    text: "शिलाजीत गोल्ड ने मेरे स्वास्थ्य में अद्भुत सुधार किया है। मुझे अब थकान नहीं होती और मैं पूरे दिन ऊर्जावान रहता हूं।",
-    rating: 5
+    rating: 5,
+    image: "/images/review-4.webp"
   }
 ];
 

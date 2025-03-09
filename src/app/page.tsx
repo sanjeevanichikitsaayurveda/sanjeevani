@@ -8,6 +8,7 @@ import ProductBenefits from '@/components/home/ProductBenefits';
 import BusinessStats from '@/components/home/BusinessStats';
 import TreatmentCTA from '@/components/home/TreatmentCTA';
 import Testimonials from '@/components/home/Testimonials';
+import LatestBlogs from '@/components/home/LatestBlogs';
 import ContactForm from '@/components/shared/ContactForm';
 import { motion } from 'framer-motion';
 import { SITE_CONSTANTS } from '@/utils/constants';
@@ -42,6 +43,9 @@ export default function Home() {
       
       {/* Testimonials Section */}
       <Testimonials />
+      
+      {/* Latest Blog Posts Section */}
+      <LatestBlogs />
       
       {/* Google Rating Section */}
       <section className="py-16 bg-green-50">

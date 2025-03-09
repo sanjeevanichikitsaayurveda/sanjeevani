@@ -5,13 +5,18 @@ import matter from 'gray-matter';
 
 const postsDirectory = path.join(process.cwd(), 'src/data/blogs/posts');
 
+type Params = {
+  params: {
+    slug: string;
+  }
+};
+
 export async function GET(
-  request: Request,
-  { params }: { params: { slug: string } }
+  req: Request,
+  { params }: Params
 ) {
-  const slug = params.slug;
-  
   try {
+    const slug = params.slug;
     const fullPath = path.join(postsDirectory, `${slug}.md`);
     
     // Check if the file exists
@@ -34,7 +39,7 @@ export async function GET(
       tags: data.tags || [],
     });
   } catch (error) {
-    console.error(`Error getting blog post with slug ${slug}:`, error);
+    console.error(`Error getting blog post:`, error);
     return NextResponse.json({ error: 'Failed to fetch blog post' }, { status: 500 });
   }
 }

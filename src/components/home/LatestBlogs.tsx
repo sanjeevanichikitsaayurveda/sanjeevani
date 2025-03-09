@@ -2,7 +2,6 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { dummyPosts } from '@/data/blogs/dummyData';
-import { BlogPost } from '@/data/blogs/types';
 
 export default function LatestBlogs() {
   // Get the 3 most recent blog posts

@@ -57,7 +57,7 @@ const Counter = ({ value, suffix, duration = 2000 }: { value: number, suffix: st
     // Don't run if value is zero
     if (start === end) return;
 
-    let timer = setInterval(() => {
+    const timer = setInterval(() => {
       start += step;
       setCount(start);
       if (start >= end) {

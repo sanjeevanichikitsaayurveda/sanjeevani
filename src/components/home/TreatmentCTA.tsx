@@ -1,7 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { SITE_CONSTANTS } from '@/utils/constants';
 
 export default function TreatmentCTA() {
   return (

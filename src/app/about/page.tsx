@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function AboutPage() {
   return (
@@ -60,10 +61,13 @@ export default function AboutPage() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              {/* Placeholder for about image */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-gray-500">About Image</span>
-              </div>
+              <Image
+                src="/images/sanjeevni-1.webp"
+                alt="About Sanjeevani Chikitsa Ayurveda"
+                fill
+                className="object-cover"
+                priority
+              />
             </motion.div>
           </div>
         </div>

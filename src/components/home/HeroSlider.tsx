@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { FaPhone, FaClock, FaFlask } from 'react-icons/fa';
+import {FaClock, FaFlask } from 'react-icons/fa';
 import { MdEmergency } from 'react-icons/md';
 import { SITE_CONSTANTS } from '@/utils/constants';
 

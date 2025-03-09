@@ -3,6 +3,7 @@
 import HeroSection from '@/components/home/HeroSlider';
 import AboutUsSection from '@/components/home/AboutUsSection';
 import ServicesHighlights from '@/components/home/ServicesHighlights';
+import TrustIndicators from '@/components/home/TrustIndicators';
 import Testimonials from '@/components/home/Testimonials';
 import ContactForm from '@/components/shared/ContactForm';
 import { motion } from 'framer-motion';
@@ -22,6 +23,8 @@ export default function Home() {
       {/* About Us Section */}
       <AboutUsSection />
       
+      {/* Trust Indicators Section */}
+      <TrustIndicators />
       
       {/* Product Showcase Section */}
       

@@ -13,7 +13,7 @@ const services = [
     description: 'Before you try your next crash diet or launch a new regime to lose weight, stop and think about our natural approach.',
     icon: <FaWeightScale size={36} className="text-white" />,
     color: 'from-green-600 to-green-700',
-    link: '/products'
+    link: '/services/weight-loss'
   },
   {
     id: 'piles',
@@ -21,7 +21,7 @@ const services = [
     description: 'Hemorrhoids, also known as piles, are swollen and distended veins in the lower rectum and anus that can be treated naturally.',
     icon: <GiMedicines size={36} className="text-white" />,
     color: 'from-green-600 to-green-700',
-    link: '/products'
+    link: '/services/piles'
   },
   {
     id: 'mens-health',
@@ -29,7 +29,7 @@ const services = [
     description: 'Sexual dysfunction is normally treated by correcting or addressing the underlying problem with our proven Ayurvedic treatments.',
     icon: <GiHealthNormal size={36} className="text-white" />,
     color: 'from-green-600 to-green-700',
-    link: '/products'
+    link: '/services/mens-health'
   },
   {
     id: 'diabetes',
@@ -37,7 +37,7 @@ const services = [
     description: 'Our Diabetes treatment is a blend of powerful ayurvedic herbs like giloy, fenugreek, turmeric, etc. for natural blood sugar control.',
     icon: <MdOutlineHealthAndSafety size={36} className="text-white" />,
     color: 'from-green-600 to-green-700',
-    link: '/products'
+    link: '/services/diabetes'
   }
 ];
 

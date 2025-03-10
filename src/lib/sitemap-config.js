@@ -1,5 +1,5 @@
 // Sitemap configuration
-const siteUrl = 'https://sanjeevaniayurveda.com';
+const siteUrl = 'https://sanjeevanichikitsaayurveda.com';
 
 // Define static routes
 const staticRoutes = [

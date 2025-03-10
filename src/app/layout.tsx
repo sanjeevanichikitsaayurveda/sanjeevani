@@ -1,14 +1,12 @@
 // import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import { GoogleTagManager } from '@next/third-parties/google'
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import FloatingButtons from '@/components/shared/FloatingButtons';
 // Metadata is defined in metadata.ts file
 import Script from 'next/script';
-import GoogleTagManager from '@/components/analytics/GoogleTagManager';
-import GoogleTagManagerNoScript from '@/components/analytics/GoogleTagManagerNoScript';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,14 +27,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="G-Q7YEM590WZ" />
       <head>
         <link rel="canonical" href="https://sanjeevaniayurveda.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#4CAF50" />
-        <GoogleTagManager />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <GoogleTagManagerNoScript />
         
         <Header />
         <main className="min-h-screen">{children}</main>

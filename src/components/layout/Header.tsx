@@ -32,7 +32,7 @@ export default function Header() {
                 priority
               />
             </div>
-            <span className="text-xl md:text-2xl font-semibold font-serif">Sanjeevani Chikitsa</span>
+            <span className="text-xl md:text-2xl font-semibold font-serif">Sanjeevani Chikitsa Ayurveda</span>
           </div>
         </Link>
 

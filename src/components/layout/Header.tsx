@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiMenu, FiX } from 'react-icons/fi';
@@ -18,9 +19,21 @@ export default function Header() {
 
   return (
     <header className="bg-green-800 text-white fixed w-full top-0 left-0 z-50 shadow-md">
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center">
-          <span className="text-xl md:text-2xl font-bold">Sanjeevani Chikitsa Ayurveda</span>
+          <div className="flex items-center">
+            <div className="relative h-8 w-auto mr-3">
+              <Image 
+                src="/images/logo.webp" 
+                alt="Sanjeevani Chikitsa Ayurveda Logo" 
+                width={60} 
+                height={30} 
+                className="object-contain" 
+                priority
+              />
+            </div>
+            <span className="text-xl md:text-2xl font-semibold font-serif">Sanjeevani Chikitsa</span>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}

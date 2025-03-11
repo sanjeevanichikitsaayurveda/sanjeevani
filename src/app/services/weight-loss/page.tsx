@@ -23,6 +23,15 @@ export default function WeightLossPage() {
             </p>
           </div>
 
+          {/* Service Image */}
+          <div className="mb-12">
+            <img 
+              src="/images/services/weight-loss.webp" 
+              alt="Ayurvedic Weight Loss Treatment" 
+              className="w-full h-auto rounded-xl shadow-lg"
+            />
+          </div>
+
           {/* Main Content */}
           <div className="prose prose-lg max-w-none text-gray-800">
             <h2>The Ayurvedic Approach to Weight Loss</h2>

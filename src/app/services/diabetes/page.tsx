@@ -23,6 +23,15 @@ export default function DiabetesPage() {
             </p>
           </div>
 
+          {/* Service Image */}
+          <div className="mb-12">
+            <img 
+              src="/images/services/diabets.webp" 
+              alt="Ayurvedic Diabetes Treatment" 
+              className="w-full h-auto rounded-xl shadow-lg"
+            />
+          </div>
+
           {/* Main Content */}
           <div className="prose prose-lg max-w-none text-gray-800">
             <h2>Ayurvedic Approach to Diabetes</h2>

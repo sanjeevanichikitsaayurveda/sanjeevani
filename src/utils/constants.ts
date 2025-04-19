@@ -80,74 +80,27 @@ export const TESTIMONIALS_DATA = [
 export const PRODUCTS_DATA = [
   {
     id: 1,
-    name: 'Ashwagandha Power',
-    description: 'Boost stamina and energy naturally with our premium Ashwagandha formula. This powerful adaptogen helps reduce stress and anxiety while improving strength and vitality.',
-    image: '/products/product1.jpg',
-    price: '₹899',
-    category: 'vitality'
+    name: 'Power Plus Capsule',
+    description: '100% pure Ayurvedic formula to increase sexual endurance and boost testosterone levels. Crafted with potent natural herbs for optimal performance without side effects.',
+    image: '/images/products/powerplus-capsule.webp',
+    price: '₹3,000',
+    category: 'performance'
   },
   {
     id: 2,
-    name: 'Shilajit Gold',
-    description: 'Pure Himalayan Shilajit for enhanced virility and vitality. Rich in fulvic acid and minerals, it helps improve testosterone levels, stamina, and overall male performance.',
-    image: '/products/product2.jpg',
-    price: '₹1,299',
+    name: 'Power Plus Oil',
+    description: 'Pure Ayurvedic oil designed to extend sexual stamina and naturally enhance testosterone levels. Made from premium herbal extracts for safe, side-effect-free use.',
+    image: '/images/products/power-plus-oil.webp',
+    price: '₹1,500',
     category: 'performance'
   },
   {
     id: 3,
-    name: 'Safed Musli Plus',
-    description: 'Traditional remedy for male potency and reproductive health. This ancient herb is known for its aphrodisiac properties and ability to improve sperm count and quality.',
-    image: '/products/product3.jpg',
-    price: '₹999',
-    category: 'reproductive'
-  },
-  {
-    id: 4,
-    name: 'Kaunch Beej Formula',
-    description: 'Ancient ayurvedic herb for sexual strength and performance. Kaunch Beej (Mucuna Pruriens) is known to support healthy testosterone levels and enhance libido naturally.',
-    image: '/products/product4.jpg',
-    price: '₹849',
+    name: 'Power Plus Capsule + Oil Combo',
+    description: 'Comprehensive Ayurvedic combo pack combining Power Plus Capsule and Oil for maximum stamina and testosterone boost. 100% herbal, side-effect-free solution for enhanced vitality.',
+    image: '/images/products/power-plus-combo.webp',
+    price: '₹4000',
     category: 'performance'
   },
-  {
-    id: 5,
-    name: 'Tribulus Power',
-    description: 'Natural testosterone booster for improved performance and libido. Tribulus terrestris has been used for centuries to enhance male sexual function and athletic performance.',
-    image: '/products/product5.jpg',
-    price: '₹799',
-    category: 'performance'
-  },
-  {
-    id: 6,
-    name: 'Vigor Blend',
-    description: 'Proprietary blend of herbs for complete male rejuvenation. This comprehensive formula combines multiple potent herbs to address all aspects of male sexual health.',
-    image: '/products/product6.jpg',
-    price: '₹1,499',
-    category: 'vitality'
-  },
-  {
-    id: 7,
-    name: 'Gokshura Extract',
-    description: 'Powerful herb for reproductive health and urinary wellness. Gokshura helps improve sexual function while also supporting prostate and kidney health.',
-    image: '/products/product7.jpg',
-    price: '₹749',
-    category: 'reproductive'
-  },
-  {
-    id: 8,
-    name: 'Shatavari Men\'s Formula',
-    description: 'Balanced hormonal support and increased vitality. Though traditionally used for women\'s health, our special men\'s formula supports endocrine function and energy levels.',
-    image: '/products/product8.jpg',
-    price: '₹899',
-    category: 'vitality'
-  },
-  {
-    id: 9,
-    name: 'Male Support Pack',
-    description: 'Complete 30-day program for comprehensive male health. This pack includes a combination of our top products designed to work synergistically for optimal results.',
-    image: '/products/product9.jpg',
-    price: '₹2,999',
-    category: 'performance'
-  }
+ 
 ];

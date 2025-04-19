@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { FaSearch } from 'react-icons/fa';
 import EnquiryModal from '@/components/shared/EnquiryModal';
 import { PRODUCTS_DATA, PRODUCT_CATEGORIES } from '@/utils/constants';
+import Image from 'next/image';
 
 export default function ProductsPage() {
   
@@ -133,11 +134,8 @@ function ProductsShowcase({ products }: { products: Product[] }) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <div className="relative h-64 bg-gray-200">
-                {/* Placeholder for product image */}
-                <div className="absolute inset-0 flex items-center justify-center bg-gray-300">
-                  <span className="text-gray-500">Product Image</span>
-                </div>
+              <div className="relative h-64">
+                <Image src={product.image} alt={product.name} fill className="object-stretch" />
               </div>
               <div className="p-6 flex-grow">
                 <h3 className="text-xl font-bold text-green-800 mb-2">{product.name}</h3>

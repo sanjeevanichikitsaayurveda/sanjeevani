@@ -96,7 +96,7 @@ export const PRODUCTS_DATA = [
   },
   {
     id: 3,
-    name: 'Power Plus Capsule + Oil Combo',
+    name: 'Power Plus Capsule + Oil Kit',
     description: 'Comprehensive Ayurvedic combo pack combining Power Plus Capsule and Oil for maximum stamina and testosterone boost. 100% herbal, side-effect-free solution for enhanced vitality.',
     image: '/images/products/power-plus-combo.webp',
     price: '₹4000',

@@ -24,14 +24,14 @@ export default function Header() {
     <header className={`w-full top-0 left-0 z-50 ${isHomePage ? 'absolute' : 'fixed bg-white shadow-md'}`} style={isHomePage ? {
       background: "transparent"
     } : {}}>
-      <div className="container mx-auto px-4 pt-6 pb-3 flex items-center justify-between relative">
+      <div className="container mx-auto px-4 py-0 flex items-center justify-between relative">
         <Link href="/" className="flex items-center justify-center flex-1">
-          <div className="relative h-44 w-auto">
+          <div className="relative h-52 w-auto">
             <Image 
               src="/images/logo.png" 
               alt="Sanjeevani Chikitsa Ayurveda Logo" 
-              width={400} 
-              height={200} 
+              width={480} 
+              height={240} 
               className="object-contain max-h-full" 
               priority
             />

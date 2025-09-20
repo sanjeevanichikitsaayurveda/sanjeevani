@@ -19,7 +19,7 @@ export default function HeroSection() {
         </div>
       </div>
       
-      <div className="container mx-auto px-4 pt-56 pb-16 md:pt-60 md:pb-20 relative z-10">
+      <div className="container mx-auto px-4 pt-60 pb-16 md:pt-64 md:pb-20 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Left Content */}
           <div className="w-full md:w-7/12 text-white">

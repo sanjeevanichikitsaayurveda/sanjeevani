@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiMenu, FiX } from 'react-icons/fi';
+import { usePathname } from 'next/navigation';
 
 const navItems = [
   { name: 'Home', path: '/' },
@@ -16,23 +17,24 @@ const navItems = [
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
 
   return (
-    <header className="bg-green-800 text-white fixed w-full top-0 left-0 z-50 shadow-md">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center">
-          <div className="flex items-center">
-            <div className="relative h-8 w-auto mr-3">
-              <Image 
-                src="/images/logo.webp" 
-                alt="Sanjeevani Chikitsa Ayurveda Logo" 
-                width={60} 
-                height={30} 
-                className="object-contain" 
-                priority
-              />
-            </div>
-            <span className="text-xl md:text-2xl font-semibold font-serif">Sanjeevani Chikitsa Ayurveda</span>
+    <header className={`w-full top-0 left-0 z-50 ${isHomePage ? 'absolute' : 'fixed bg-white shadow-md'}`} style={isHomePage ? {
+      background: "transparent"
+    } : {}}>
+      <div className="container mx-auto px-4 pt-6 pb-3 flex items-center justify-between relative">
+        <Link href="/" className="flex items-center md:justify-start justify-center flex-1 md:flex-none">
+          <div className="relative h-30 w-auto">
+            <Image 
+              src="/images/logo.png" 
+              alt="Sanjeevani Chikitsa Ayurveda Logo" 
+              width={270} 
+              height={135} 
+              className="object-contain max-h-full" 
+              priority
+            />
           </div>
         </Link>
 
@@ -42,7 +44,7 @@ export default function Header() {
             <Link 
               key={item.path} 
               href={item.path}
-              className="hover:text-green-300 transition-colors font-medium"
+              className={`${isHomePage ? 'text-white hover:text-green-200' : 'text-black hover:text-green-600'} transition-colors font-medium`}
             >
               {item.name}
             </Link>
@@ -51,7 +53,7 @@ export default function Header() {
 
         {/* Mobile Navigation Toggle */}
         <button 
-          className="md:hidden text-2xl"
+          className={`md:hidden text-2xl ${isHomePage ? 'text-white' : 'text-black'} absolute right-4`}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <FiX /> : <FiMenu />}
@@ -64,7 +66,11 @@ export default function Header() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="md:hidden bg-green-800 shadow-lg"
+          className="md:hidden"
+          style={{
+            background: "rgba(0, 0, 0, 0.8)",
+            backdropFilter: "blur(10px)"
+          }}
         >
           <div className="container mx-auto px-4 py-3">
             <div className="flex flex-col space-y-4">
@@ -72,7 +78,7 @@ export default function Header() {
                 <Link 
                   key={item.path}
                   href={item.path}
-                  className="hover:text-green-300 transition-colors text-lg font-medium block py-2"
+                  className="text-white hover:text-green-200 transition-colors text-lg font-medium block py-2"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}

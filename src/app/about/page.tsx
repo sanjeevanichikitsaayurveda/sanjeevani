@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-green-700 text-white py-20">
+      <section className="relative bg-green-700 text-white pt-32 pb-20">
         <div className="container mx-auto px-4 text-center">
           <motion.h1 
             className="text-4xl md:text-5xl font-bold mb-6"

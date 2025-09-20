@@ -80,8 +80,8 @@ export default function ContactPage() {
                     <div>
                       <h3 className="text-xl font-bold text-green-800 mb-2">Email</h3>
                       <p className="text-gray-600 mb-1">For inquiries:</p>
-                      <a href="mailto:mkbagaria13@gmail.com" className="text-green-700 font-medium hover:underline">
-                        mkbagaria13@gmail.com
+                      <a href="mailto:sanjeevanichikitsaayurveda@gmail.com" className="text-green-700 font-medium hover:underline">
+                        sanjeevanichikitsaayurveda@gmail.com
                       </a>
                     </div>
                   </div>

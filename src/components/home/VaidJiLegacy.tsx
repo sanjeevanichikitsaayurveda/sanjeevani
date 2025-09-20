@@ -17,7 +17,7 @@ export default function VaidJiLegacy() {
           <div className="mb-8">
             <div className="relative rounded-full overflow-hidden shadow-xl w-48 h-48 mx-auto">
               <Image
-                src="/images/vaid-ji-image.jpeg"
+                src="/images/vaid-ji-image.png"
                 alt="Vaid Ji - Ayurvedic Expert"
                 width={192}
                 height={192}

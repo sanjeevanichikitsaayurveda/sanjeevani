@@ -26,59 +26,47 @@ export default function Header() {
     } : {}}>
       <div className="container mx-auto px-4 pt-6 pb-3 flex items-center justify-between relative">
         <Link href="/" className="flex items-center justify-center flex-1">
-          <div className="relative h-36 w-auto">
+          <div className="relative h-44 w-auto">
             <Image 
               src="/images/logo.png" 
               alt="Sanjeevani Chikitsa Ayurveda Logo" 
-              width={320} 
-              height={160} 
+              width={400} 
+              height={200} 
               className="object-contain max-h-full" 
               priority
             />
           </div>
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
-          {navItems.map((item) => (
-            <Link 
-              key={item.path} 
-              href={item.path}
-              className={`${isHomePage ? 'text-white hover:text-green-200' : 'text-black hover:text-green-600'} transition-colors font-medium`}
-            >
-              {item.name}
-            </Link>
-          ))}
-        </nav>
-
-        {/* Mobile Navigation Toggle */}
+        {/* Navigation Toggle - Now for all devices */}
         <button 
-          className={`md:hidden text-2xl ${isHomePage ? 'text-white' : 'text-black'} absolute right-4`}
+          className={`flex items-center space-x-2 text-3xl ${isHomePage ? 'text-white' : 'text-black'} absolute right-4`}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <FiX /> : <FiMenu />}
+          <span className="text-sm font-medium uppercase tracking-wide">MENU</span>
         </button>
       </div>
 
-      {/* Mobile Navigation Menu */}
+      {/* Navigation Menu - Now for all devices */}
       {isOpen && (
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="md:hidden"
+          className=""
           style={{
             background: "rgba(0, 0, 0, 0.8)",
             backdropFilter: "blur(10px)"
           }}
         >
-          <div className="container mx-auto px-4 py-3">
-            <div className="flex flex-col space-y-4">
+          <div className="container mx-auto px-4 py-6">
+            <div className="flex flex-col space-y-6 items-center">
               {navItems.map((item) => (
                 <Link 
                   key={item.path}
                   href={item.path}
-                  className="text-white hover:text-green-200 transition-colors text-lg font-medium block py-2"
+                  className="text-white hover:text-green-200 transition-colors text-xl font-medium block py-3 text-center"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}

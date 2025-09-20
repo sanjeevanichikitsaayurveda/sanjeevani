@@ -25,13 +25,13 @@ export default function Header() {
       background: "transparent"
     } : {}}>
       <div className="container mx-auto px-4 pt-6 pb-3 flex items-center justify-between relative">
-        <Link href="/" className="flex items-center md:justify-start justify-center flex-1 md:flex-none">
-          <div className="relative h-30 w-auto">
+        <Link href="/" className="flex items-center justify-center flex-1">
+          <div className="relative h-36 w-auto">
             <Image 
               src="/images/logo.png" 
               alt="Sanjeevani Chikitsa Ayurveda Logo" 
-              width={270} 
-              height={135} 
+              width={320} 
+              height={160} 
               className="object-contain max-h-full" 
               priority
             />

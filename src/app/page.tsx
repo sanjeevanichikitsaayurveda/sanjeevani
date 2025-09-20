@@ -2,6 +2,7 @@
 
 import HeroSection from '@/components/home/HeroSlider';
 import AboutUsSection from '@/components/home/AboutUsSection';
+import VaidJiLegacy from '@/components/home/VaidJiLegacy';
 import ServicesHighlights from '@/components/home/ServicesHighlights';
 import TrustIndicators from '@/components/home/TrustIndicators';
 import ProductBenefits from '@/components/home/ProductBenefits';
@@ -26,6 +27,9 @@ export default function Home() {
       
       {/* About Us Section */}
       <AboutUsSection />
+      
+      {/* Vaid Ji Legacy Section */}
+      <VaidJiLegacy />
       
       {/* Trust Indicators Section */}
       <TrustIndicators />
